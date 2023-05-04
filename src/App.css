@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+
+body{
+  background-color:#F0F0F0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-nav{
+  color: #3C486B;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: 
+    -5px -5px 10px #F9D949, 
+    5px 5px 10px #d9d9d9; 
+  border-radius: 10px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  height: 80px; 
+  font-weight: bold;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin: 20px;
+}
+
+.show-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.show-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.show-content {
+  background-color: #f0f0f0;
+  color: #3C486B;
+  padding: 16px;
+  text-align: center;
+}
+
+.show-content h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.show-summary-button {
+  display: inline-block;
+  max-width: 150px;
+  padding: 8px 16px;
+  background-color: #F9D949;
+  color: #3C486B;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.show-summary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  background-color: #F45050;
+  color: #F0F0F0;
+}
+
+.show-summary-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  background: #F0F0F0;
+  box-shadow: 6px 6px 10px #c7c7c7, -6px -6px 10px #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.show-title {
+  margin-top: 0;
+  font-size: 28px;
+  text-align: center;
+  color: #3C486B;
+}
+
+.show-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #3C486B;
+}
+
+.show-summary-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.bookButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #F45050;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.bookButton:hover {
+  background: #F9D949;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  background: #f5f5f5;
+  width: 400px;
+}
+
+.booking-form-title {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.booking-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.booking-form-field label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.booking-form-field input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.booking-form-field input:focus {
+  outline: none;
+}
+
+.booking-form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.booking-form-actions button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #F9D949;
+  color: #3C486B;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.booking-form-actions button:hover {
+  background-color: #3C486B;
+  color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
